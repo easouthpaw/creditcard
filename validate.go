@@ -1,4 +1,4 @@
-package cmd
+package creditcard
 
 import (
 	"fmt"
@@ -7,7 +7,7 @@ import (
 
 func Run(args []string) {
 	if len(args) == 0 {
-		fmt.Fprintln(os.Stderr, "Usage: creditcard validate [numbers...] or --stdin")
+		fmt.Fprintln(os.Stderr, "Example: creditcard validate [numbers...]")
 		os.Exit(1)
 	}
 

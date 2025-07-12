@@ -1,4 +1,4 @@
-package cmd
+package creditcard
 
 func LuhnAlgorithm(cardNumber string) bool {
 	total := 0

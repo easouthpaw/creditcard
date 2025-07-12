@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/easouthpaw/creditcard/cmd"
+	"github.com/easouthpaw/creditcard"
 	"os"
 )
 
@@ -17,9 +17,9 @@ func main() {
 
 	switch command {
 	case "validate":
-		cmd.Run(args)
-	case "test":
-		cmd.Run(args)
+		creditcard.Run(args)
+	case "information":
+		creditcard.Run(args)
 	default:
 		fmt.Println("Unknown flag")
 		os.Exit(1)
